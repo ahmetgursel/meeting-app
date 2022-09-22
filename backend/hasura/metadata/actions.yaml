@@ -1,6 +1,13 @@
-actions: []
+actions:
+  - name: register
+    definition:
+      kind: synchronous
+      handler: '{{ACTION_BASE_ENDPOINT}}/auth/register'
+      forward_client_headers: true
 custom_types:
   enums: []
-  input_objects: []
-  objects: []
+  input_objects:
+    - name: RegisterInput
+  objects:
+    - name: RegisterOutput
   scalars: []
