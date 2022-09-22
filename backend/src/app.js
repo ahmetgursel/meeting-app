@@ -1,7 +1,9 @@
 import express from 'express';
 import Boom from 'boom';
-
+import dotenv from 'dotenv';
 import auth from './routes/auth';
+
+dotenv.config();
 
 const PORT = 4000;
 const app = express();
