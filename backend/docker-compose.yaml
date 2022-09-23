@@ -24,7 +24,7 @@ services:
       ## enable debugging mode. It is recommended to disable this in production
       HASURA_GRAPHQL_DEV_MODE: "true"
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
-      ACTION_BASE_ENDPOINT: http://172.24.166.62:4000
+      ACTION_BASE_ENDPOINT: http://172.24.170.72:4000
       HASURA_GRAPHQL_JWT_SECRET: '{"type": "HS256", "key":"my-secret-token-to-change-in-production!"}'
       HASURA_GRAPHQL_UNAUTHORIZED_ROLE: "anonymous"
       ## uncomment next line to run console offline (i.e load console assets from server instead of CDN)
