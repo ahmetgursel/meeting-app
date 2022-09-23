@@ -16,6 +16,12 @@ array_relationships:
         table:
           name: participants
           schema: public
+computed_fields:
+  - name: fullName
+    definition:
+      function:
+        name: user_full_name
+        schema: public
 insert_permissions:
   - role: user
     permission:
@@ -29,4 +35,6 @@ select_permissions:
         - id
         - name
         - surname
+      computed_fields:
+        - fullName
       filter: {}
