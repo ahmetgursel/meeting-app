@@ -19,12 +19,14 @@
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "boom": "^7.3.0",
     "dotenv": "^16.0.2",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
     "nodemailer": "^6.7.8"
   }
 }
