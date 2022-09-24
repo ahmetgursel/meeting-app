@@ -1,7 +1,10 @@
 import express from 'express';
 import Boom from 'boom';
 import dotenv from 'dotenv';
+
+//routes
 import auth from './routes/auth';
+import webhooks from './routes/webhooks';
 
 dotenv.config();
 
@@ -10,6 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use('/auth', auth);
+app.use('/webhooks', webhooks);
 
 app.get('/', async (req, res) => {
   return res.end('hello stranger!');
